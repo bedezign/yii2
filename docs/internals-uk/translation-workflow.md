@@ -73,8 +73,10 @@ php build translation "../docs/guide" "../docs/guide-uk" "Ukrainian guide transl
 
 ### Список термінів
 
+[Англійсько-українські словники](http://e2u.org.ua)
+
 - action — дія;
-- active record — (не перекладається);
+- Active Record — (не перекладається);
 - Advanced/Basic Project Template — Розширений/Базовий шаблон проекту;
 - alias — псевдонім;
 - alphanumeric — буквено-цифровий;
@@ -86,11 +88,12 @@ php build translation "../docs/guide" "../docs/guide-uk" "Ukrainian guide transl
 - authorization — авторизація/уповноваження;
 - autoloader — автозавантажувач;
 - back-end — (не перекладається);
+- backward compatibility / BC — зворотна сумісність;
 - bootstrap, bootstrapping — початкове завантаження;
 - branch — гілка;
 - browser — браузер;
 - (asset) bundle — колекція (ресурсів);
-- cache — кеш;
+- cache, caching — кеш, кешування;
 - camel case — (не перекладається);
 - case-sensitive — регістр-залежний;
 - column — колонка;
@@ -98,18 +101,19 @@ php build translation "../docs/guide" "../docs/guide-uk" "Ukrainian guide transl
 - concatenation — конкатенація;
 - configuration — конфігурація;
 - content — вміст;
+- content view — вкладене представлення;
 - contributor — учасник;
 - cookies — кукі;
 - customization — (тонке) налаштування;
 - debug mode — режим налагодження (див. production mode);
-- debugger — відладчик;
+- debugger — налагоджувач;
 - (function) declaration — оголошення (функції);
 - definition — визначення;
 - design pattern — шаблон проектування;
 - development mode — режим розробки;
 - (root) directory — (коренева) директорія;
 - eager loading — жадібне завантаження (див. lazy loading);
-- email address — адреса e-mail;
+- email address — адреса електронної пошти;
 - environment — середовище;
 - exception — виключення;
 - existing — наявний/присутній; // перекладати як "існуючий" не вірно
@@ -127,6 +131,7 @@ php build translation "../docs/guide" "../docs/guide-uk" "Ukrainian guide transl
 - getter — геттер;
 - (event) handler — обробник (події);
 - hash — хеш;
+- header — шапка;
 - help — довідка;
 - helper — хелпер;
 - id — ідентифікатор;
@@ -144,15 +149,18 @@ php build translation "../docs/guide" "../docs/guide-uk" "Ukrainian guide transl
 - merge — поєднання;
 - Model-View-Controller (MVC) — Модель-Представлення-Контролер (MVC);
 - namespace — простір імен;
+- out of the box — "з коробки";
 - package — пакунок;
 - pagination — розділення на сторінки;
 - parameter — параметр;
 - to parse — обробляти;
+- (application) performance — швидкодія (додатка);
 - placeholder — заповнювач;
 - plugin — плагін;
 - postprocessing — після-обробка;
 - predefined — попередньо визначений;
 - production mode — робочий режим (див. debug mode);
+- profiling — профілювання;
 - property — властивість (обʼєкта);
 - pull request — (не перекладається);
 - query builder — конструктор запитів;
@@ -164,6 +172,7 @@ php build translation "../docs/guide" "../docs/guide-uk" "Ukrainian guide transl
 - resolve request — попередня обробка запиту;
 - route, routing — маршрут, маршрутизація;
 - row (of the table) — рядок (таблиці);
+- screenshot — знімок екрану;
 - Service Locator — Локатор служб;
 - setter — сеттер;
 - shared hosting — віртуальний хостинг;
@@ -174,11 +183,14 @@ php build translation "../docs/guide" "../docs/guide-uk" "Ukrainian guide transl
 - sub-directory — під-директорія;
 - substitution — підставлення/заміщення;
 - tabular input — табличний ввід;
+- tag — тег;
 - template engine — шаблонізатор;
 - theming — темізація;
 - third party — сторонній;
 - thumbnail — мініатюра;
+- tracing — трасування;
 - trait — трейт;
+- trigger event — породжувати подію;
 - Twitter — Твіттер;
 - Unicode — (не перекладається);
 - unit tests — модульні тести;

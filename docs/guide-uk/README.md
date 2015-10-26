@@ -23,7 +23,7 @@ All Rights Reserved.
 * [Говоримо "Привіт"](start-hello.md)
 * [Робота з формами](start-forms.md)
 * [Робота з базами даних](start-databases.md)
-* [Генерація коду за допомогою Gii](start-gii.md)
+* [Генерування коду за допомогою Gii](start-gii.md)
 * [Наступні кроки](start-looking-ahead.md)
 
 
@@ -143,9 +143,9 @@ All Rights Reserved.
 Інструменти розробника
 ----------------------
 
-* **TBD** [Панель налагодження та відладчик](https://github.com/yiisoft/yii2-debug/blob/master/docs/guide-uk/README.md)
-* **TBD** [Генерація коду з Gii](https://github.com/yiisoft/yii2-gii/blob/master/docs/guide-uk/README.md)
-* [Генератор документації API (en)](https://github.com/yiisoft/yii2-apidoc)
+* [Панель налагодження та налагоджувач](https://github.com/yiisoft/yii2-debug/blob/master/docs/guide-uk/README.md)
+* [Генерування коду за допомогою Gii](https://github.com/yiisoft/yii2-gii/blob/master/docs/guide-uk/README.md)
+* **TBD** [Генерування документації API](https://github.com/yiisoft/yii2-apidoc)
 
 
 Тестування
@@ -163,14 +163,14 @@ All Rights Reserved.
 ---------------
 
 * **TBD** [Розширений шаблон проекту](https://github.com/yiisoft/yii2-app-advanced/blob/master/docs/guide-uk/README.md)
-* **TBD** [Створення додатка з нуля](tutorial-start-from-scratch.md)
-* **TBD** [Консольні команди](tutorial-console.md)
+* [Створення додатка з нуля](tutorial-start-from-scratch.md)
+* [Консольні додатки](tutorial-console.md)
 * **TBD** [Основні валідатори](tutorial-core-validators.md)
 * **TBD** [Інтернаціоналізація](tutorial-i18n.md)
 * **TBD** [Робота з поштою](tutorial-mailing.md)
-* **TBD** [Вдосконалення продуктивності](tutorial-performance-tuning.md)
+* **TBD** [Покращення швидкодії](tutorial-performance-tuning.md)
 * **TBD** [Робота на віртуальному хостингу](tutorial-shared-hosting.md)
-* **TBD** [Шаблонізатори](tutorial-template-engines.md)
+* [Шаблонізатори](tutorial-template-engines.md)
 * [Робота із стороннім кодом](tutorial-yii-integration.md)
 
 

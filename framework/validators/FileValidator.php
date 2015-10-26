@@ -29,7 +29,7 @@ class FileValidator extends Validator
      * separated by space or comma (e.g. "gif, jpg").
      * Extension names are case-insensitive. Defaults to null, meaning all file name
      * extensions are allowed.
-     * @see wrongType for the customized message for wrong file type.
+     * @see wrongExtension for the customized message for wrong file type.
      */
     public $extensions;
     /**
@@ -122,7 +122,7 @@ class FileValidator extends Validator
      * - {mimeTypes}: the value of [[mimeTypes]]
      */
     public $wrongMimeType;
-    
+
 
     /**
      * @inheritdoc
@@ -248,9 +248,10 @@ class FileValidator extends Validator
 
     /**
      * Returns the maximum size allowed for uploaded files.
-     * This is determined based on three factors:
+     * This is determined based on four factors:
      *
      * - 'upload_max_filesize' in php.ini
+     * - 'post_max_size' in php.ini
      * - 'MAX_FILE_SIZE' hidden field
      * - [[maxSize]]
      *
@@ -258,7 +259,13 @@ class FileValidator extends Validator
      */
     public function getSizeLimit()
     {
+        // Get the lowest between post_max_size and upload_max_filesize, log a warning if the first is < than the latter
         $limit = $this->sizeToBytes(ini_get('upload_max_filesize'));
+        $postLimit = $this->sizeToBytes(ini_get('post_max_size'));
+        if ($postLimit > 0 && $postLimit < $limit) {
+            Yii::warning('PHP.ini\'s \'post_max_size\' is less than \'upload_max_filesize\'.', __METHOD__);
+            $limit = $postLimit;
+        }
         if ($this->maxSize !== null && $limit > 0 && $this->maxSize < $limit) {
             $limit = $this->maxSize;
         }
@@ -370,7 +377,7 @@ class FileValidator extends Validator
             $options['mimeTypes'] = $this->mimeTypes;
             $options['wrongMimeType'] = Yii::$app->getI18n()->format($this->wrongMimeType, [
                 'attribute' => $label,
-                'mimeTypes' => join(', ', $this->mimeTypes),
+                'mimeTypes' => implode(', ', $this->mimeTypes),
             ], Yii::$app->language);
         }
 
@@ -378,7 +385,7 @@ class FileValidator extends Validator
             $options['extensions'] = $this->extensions;
             $options['wrongExtension'] = Yii::$app->getI18n()->format($this->wrongExtension, [
                 'attribute' => $label,
-                'extensions' => join(', ', $this->extensions),
+                'extensions' => implode(', ', $this->extensions),
             ], Yii::$app->language);
         }
 
